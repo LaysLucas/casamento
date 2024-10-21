@@ -1,0 +1,241 @@
+/* importação de fonte pelo 'fonts google': */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* { /* resetar config padrão do navegador */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*MENU*/
+#cabecalho {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+/*class ativada com js para fixar o menu principal:*/
+.cabecalho-rolagem {
+    position: fixed; /*fixar menu na tela*/
+    width: 100%;
+    top: 0;
+    z-index: 999; /*sobreposição nos itens*/
+    background-color: white; /* Fundo branco ou cor desejada */
+}
+
+#cabecalho .container {
+    display: flex; /*elementos um ao lado do outro*/
+    align-items: center; /*centralizar o elemento, removendo distorção da imagem*/
+    justify-content: space-between; /*elementos em lados opostos*/
+}
+
+/* Estilo para o botão hamburger */
+.navbar-toggler {
+    border: none; /* Remove a borda do botão hamburger */
+    background-color: transparent; /* Fundo transparente para o botão */
+}
+
+/* Ícone do hamburger visível apenas no mobile */
+.navbar-toggler-icon {
+    width: 30px; /* Largura total do ícone */
+    height: 30px; /* Altura total do ícone */
+    display: flex; /* Para alinhar as linhas */
+    flex-direction: column; /* Para empilhar as linhas */
+    justify-content: space-between; /* Espaçamento igual entre as linhas */
+}
+
+/* Linhas do hamburger */
+.navbar-toggler-icon div {
+    background-color: #796fcd; /* Cor das linhas do hamburger */
+    height: 3px; /* Altura das linhas do hamburger */
+    width: 100%; /* Largura total das linhas */
+    margin-bottom: 6px;
+}
+
+/* Exibir o ícone hamburger apenas em telas pequenas */
+@media (min-width: 768px) {
+    .navbar-toggler {
+        display: none; /* Oculta o botão hamburger em telas grandes */
+    }
+}
+
+.nav-link {
+    font-family: Poppins;
+    color: #505050!important;
+}
+
+/* Estilo dos itens do menu lateral */
+.offcanvas .nav-link {
+    font-size: 18px;
+    font-family: Poppins;
+    color: #505050;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0; /* Linha separadora */
+}
+
+.offcanvas .nav-link:hover {
+    color: #796fcd;
+}
+
+/* Ajuste da largura do menu lateral */
+.custom-offcanvas {
+    width: 80% !important; /* Define a largura do offcanvas como 80% */
+    border-radius: 15px 0px 0px 15px;
+}
+
+.logo-menu a {
+    text-decoration: none;
+}
+
+.logo-menu span {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    color: #796fcd;
+}
+
+/*CORPO DO SITE*/
+
+/* Tamanho da imagem */
+.img-fundo {
+    background-image: url('../imagens/foto-fundo.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir a área */
+    background-position: center; /* Centraliza a imagem */
+    height: 700px; /* Define a altura da imagem */
+    position: relative; /* Para permitir o posicionamento do texto */
+    display: flex; /* Para centralizar o texto */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilização do texto */
+.texto-sobre-imagem {
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra nas letras */
+}
+
+.texto-sobre-imagem h1 {
+    font-size: 32px;
+    font-family: Poppins;
+}
+
+.texto-sobre-imagem p {
+    font-size: 18px;
+    font-family: Poppins;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+.time-box {
+    background-color: #796fcd; /* Cor lavanda */
+    border-radius: 10px;
+    padding: 15px 10px; /* Ajustando o padding */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100px; /* Aumentando a largura para 100px */
+    overflow: hidden; /* Evita que o texto saia do quadrado */
+}
+
+.time-box span {
+    display: block;
+    font-size: 2rem; /* Tamanho do número */
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.2; /* Ajustando o espaçamento entre linhas */
+}
+
+.time-box div {
+    font-size: 0.8rem; /* Tamanho do texto "Dias", "Horas", etc. */
+    color: #ffffff;
+    white-space: nowrap; /* Impede a quebra de linha */
+}
+
+.countdown-title {
+    font-size: 2rem; /* Tamanho da fonte do título */
+    font-weight: bold; /* Negrito */
+    color: #796fcd;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+
+}
+
+.img-lavanda {
+    height: 8rem;
+    margin-top: 10px;
+}
+
+.texto-explicativo p {
+    text-align: center;
+    font-family: Poppins;
+}
+
+
+
+
+
+/*já tinha:*/
+.titulo-site {
+    text-align: center;
+    background-color: #796fcd;
+    font-size: 2rem;
+}
+
+.titulo-item {
+    text-align: center;
+    font-family: Poppins;
+
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+main button {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.info-endereco {
+    text-align: center;
+}
+
+.detalhes-endereco {
+    margin-bottom: 0;
+    font-family: Poppins;
+}
+
+/* Parte referente a desabilitar o item (apenas titulo e img): */
+.disabled > h3, .disabled img {
+    opacity: 0.5;  /* Tornar o elemento translúcido */
+    pointer-events: none; /* Desabilitar interações com o elemento */
+}
+
+.disabled a {
+    display: none; /* Sumir com os botões */
+}
+
+.msg-ganhamos {
+    display: none; /* Deixar o parágrafo desabilitado por padrão */
+    font-style: italic;
+    font-family: Poppins;
+}
+
+.disabled .msg-ganhamos {
+    display: block; /* Exibe o parágrafo quando a classe 'disabled' está presente */
+    text-align: center;
+    width: 100%;
+    margin-bottom: -0.5rem;
+}
