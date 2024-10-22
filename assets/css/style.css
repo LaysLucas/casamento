@@ -261,29 +261,6 @@
 
 
 /*já tinha:*/
-.titulo-site {
-    text-align: center;
-    background-color: #796fcd;
-    font-size: 2rem;
-}
-
-.titulo-item {
-    text-align: center;
-    font-family: Poppins;
-
-}
-
-main img {
-    max-width: 100%;
-    height: auto;
-}
-
-main button {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-}
-
 .info-endereco {
     text-align: center;
 }
@@ -294,7 +271,7 @@ main button {
 }
 
 /* Parte referente a desabilitar o item (apenas titulo e img): */
-.disabled > h3, .disabled img {
+.disabled > h4, .disabled img {
     opacity: 0.5;  /* Tornar o elemento translúcido */
     pointer-events: none; /* Desabilitar interações com o elemento */
 }
@@ -313,5 +290,5 @@ main button {
     display: block; /* Exibe o parágrafo quando a classe 'disabled' está presente */
     text-align: center;
     width: 100%;
-    margin-bottom: -0.5rem;
+    margin-top: 0.3rem;
 }
