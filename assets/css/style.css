@@ -141,7 +141,7 @@
 .time-box {
     background-color: #796fcd; /* Cor lavanda */
     border-radius: 10px;
-    padding: 15px 10px; /* Ajustando o padding */
+    padding: 20px 10px; /* Ajustando o padding */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100px; /* Aumentando a largura para 100px */
@@ -180,7 +180,83 @@
     font-family: Poppins;
 }
 
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease-in-out;
+}
 
+.product-card:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card img {
+    height: 200px; /* Define uma altura fixa para o container da imagem */
+    object-fit: contain; /* Ajusta a imagem dentro do container sem cortar */
+    width: 100%; /* Garante que a largura seja sempre 100% */
+}
+
+
+.product-card h4, 
+.product-card a {
+    margin: 0;
+    font-family: Poppins;
+}
+
+.btn-custom {
+    display: inline-block;
+    padding: 6px 12px; /* Tamanho do botão */
+    background-color: #796fcd; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove o sublinhado */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Efeito de transição para hover */
+    cursor: pointer; /* Cursor tipo mão ao passar o mouse */
+}
+
+.btn-custom:hover {
+    background-color: #685bb3; /* Cor de fundo ao passar o mouse */
+    color: white; /* Mantém a cor do texto */
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    padding: 6px 12px; /* Tamanho do botão */
+    background-color: #ffffff; /* Cor de fundo */
+    color: #198754; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove o sublinhado */
+    border: 1px solid #198754; /* Remove a borda */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Efeito de transição para hover */
+    cursor: pointer; /* Cursor tipo mão ao passar o mouse */
+}
+
+.btn-whatsapp i {
+    color: #198754; /* Cor do ícone normal */
+    transition: color 0.2s; /* Transição suave para a cor do ícone */
+}
+
+.btn-whatsapp:hover {
+    background-color: #198754; /* Cor ao passar o mouse */
+    color: #ffffff;
+}
+
+.btn-whatsapp:hover i {
+    color: #ffffff;
+}
 
 
 
