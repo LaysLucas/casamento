@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lays e Lucas</title>
-    <link rel="icon" type="image/png" href="../imagens/icon.png"/>
+    <link rel="icon" type="image/png" href="../assets/imagens/icon.png"/>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -48,7 +48,7 @@
         <!-- Offcanvas (menu lateral) abrindo pela direita -->
         <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="menuLateralLabel">Menu</h5>
+                <h4 class="offcanvas-title" id="menuLateralLabel">Menu</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -63,182 +63,92 @@
         </div>
     </header>
 
-    <main class="mb-4">
-        <div class="info-endereco mt-4">
-            <strong>Endereço para entrega</strong>
+    <main>
+        <div class="info-endereco mt-4 card-shadow">
+            <p class="detalhes-endereco fw-bold">Endereço para entrega</p>
             <p class="detalhes-endereco">CEP: 48.603-000</p>
             <p class="detalhes-endereco">Rua Joana Angélica, n° 530</p>
             <p class="detalhes-endereco">Bairro Perpértuo Socorro</p>
             <p class="detalhes-endereco">Paulo Afonso - Bahia</p>
         </div>
 
-        <div class="container mt-4">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <h3 class="titulo-item">Micro-ondas</h3>
-                    <img src="../assets/imagens-presentes/microondas.jpg" alt="Foto do Microondas" class="img-fluid mb-3">
-                    <div class="d-flex gap-2">
-                        <p class="msg-ganhamos">Já ganhamos esse presente!</p>
-                        <a href="https://encurtador.com.br/tHECn" target="_blank" class="btn btn-secondary btn-lg w-100">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-                        <a href="https://wa.me/5575991950593?text=Olá,%20gostaria%20de%20presentear%20com%20o%20micro-ondas!" target="_blank" class="btn btn-success btn-lg w-100">Presentear! <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <div class="product-card shadow-sm p-3">
+                        <img src="../assets/imagens-presentes/batedeira.jpg" alt="Produto 1" class="img-fluid">
+                        <h4 class="my-3">Batedeira</h4>
+                        <a href="#" class="btn-custom btn-block mb-2" target="_blank">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+                        <a href="https://wa.me/7591950593?text=Escolhi%20o%20Presente!" class="btn-whatsapp btn-block" target="_blank">Presentear! <i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <h3 class="titulo-item">Jogo de Panelas</h3>
-                    <img src="../assets/imagens-presentes/jogo-panelas.jpg" alt="Foto do Jogo de Panelas" class="img-fluid mb-3">
-                    <div class="d-flex gap-2">
-                        <p class="msg-ganhamos">Já ganhamos esse presente!</p>
-                        <a href="https://encurtador.com.br/NeuIO" target="_blank" class="btn btn-secondary btn-lg w-100">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-                        <a href="https://wa.me/5575991950593?text=Olá,%20gostaria%20de%20presentear%20com%20o%20jogo%20de%20panelas!" target="_blank" class="btn btn-success btn-lg w-100">Presentear! <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <div class="product-card shadow-sm p-3">
+                        <img src="../assets/imagens-presentes/cafeteira-espresso.jpg" alt="Produto 2" class="img-fluid">
+                        <h4 class="my-3">Cafeteira</h4>
+                        <a href="#" class="btn-custom btn-block mb-2" target="_blank">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+                        <a href="https://wa.me/7591950593?text=Escolhi%20o%20Presente!" class="btn-whatsapp btn-block" target="_blank">Presentear! <i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <h3 class="titulo-item">Conjunto de Potes</h3>
-                    <img src="../assets/imagens-presentes/conjunto-potes.jpg" alt="Foto do Conjunto de Potes" class="img-fluid mb-3">
-                    <div class="d-flex gap-2">
-                        <p class="msg-ganhamos">Já ganhamos esse presente!</p>
-                        <a href="https://encurtador.com.br/fSB7A" target="_blank" class="btn btn-secondary btn-lg w-100">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-                        <a href="https://wa.me/5575991950593?text=Olá,%20gostaria%20de%20presentear%20com%20o%20conjunto%20de%20potes!" target="_blank" class="btn btn-success btn-lg w-100">Presentear! <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <div class="product-card shadow-sm p-3">
+                        <img src="../assets/imagens-presentes/conjunto-potes.jpg" alt="Produto 3" class="img-fluid">
+                        <h4 class="my-2">Potes</h4>
+                        <a href="#" class="btn-custom btn-block mb-2" target="_blank">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+                        <a href="https://wa.me/7591950593?text=Escolhi%20o%20Presente!" class="btn-whatsapp btn-block" target="_blank">Presentear! <i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <h3 class="titulo-item">Sanduicheira</h3>
-                    <img src="../assets/imagens-presentes/sanduicheira.jpg" alt="Foto da Sanduicheira" class="img-fluid mb-3">
-                    <div class="d-flex gap-2">
-                        <p class="msg-ganhamos">Já ganhamos esse presente!</p>
-                        <a href="https://www.magazineluiza.com.br/sanduicheira-e-grill-philco-press-titanium-inox-pgr08t/p/hg61c7k7ga/ep/gset/?partner_id=64068" target="_blank" class="btn btn-secondary btn-lg w-100">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-                        <a href="https://wa.me/5575991950593?text=Olá,%20gostaria%20de%20presentear%20com%20a%20sanduicheira!" target="_blank" class="btn btn-success btn-lg w-100">Presentear! <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <div class="product-card shadow-sm p-3">
+                        <img src="../assets/imagens-presentes/faqueiro.jpg" alt="Produto 4" class="img-fluid">
+                        <h4 class="my-2">Faqueiro</h4>
+                        <a href="#" class="btn-custom btn-block mb-2" target="_blank">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+                        <a href="https://wa.me/7591950593?text=Escolhi%20o%20Presente!" class="btn-whatsapp btn-block" target="_blank">Presentear! <i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <h3 class="titulo-item">Liquidificador</h3>
-                    <img src="../assets/imagens-presentes/liquidificador.jpg" alt="Foto da Sanduicheira" class="img-fluid mb-3">
-                    <div class="d-flex gap-2">
-                        <p class="msg-ganhamos">Já ganhamos esse presente!</p>
-                        <a href="https://www.magazineluiza.com.br/liquidificador-mondial-turbo-power-l-99-fb-preto-com-filtro-3-velocidades-550w/p/021756600/ep/lqac/?partner_id=64068" target="_blank" class="btn btn-secondary btn-lg w-100">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-                        <a href="https://wa.me/5575991950593?text=Olá,%20gostaria%20de%20presentear%20com%20o%20liquidificador!" target="_blank" class="btn btn-success btn-lg w-100">Presentear! <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <div class="product-card shadow-sm p-3">
+                        <img src="../assets/imagens-presentes/jogo-copos.jpg" alt="Produto 5" class="img-fluid">
+                        <h4 class="my-2">Jogo de Copos</h4>
+                        <a href="#" class="btn-custom btn-block mb-2" target="_blank">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+                        <a href="https://wa.me/7591950593?text=Escolhi%20o%20Presente!" class="btn-whatsapp btn-block" target="_blank">Presentear! <i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <h3 class="titulo-item">Batedeira</h3>
-                    <img src="../assets/imagens-presentes/batedeira.jpg" alt="Foto da Sanduicheira" class="img-fluid mb-3">
-                    <div class="d-flex gap-2">
-                        <p class="msg-ganhamos">Já ganhamos esse presente!</p>
-                        <a href="https://www.magazineluiza.com.br/batedeira-planetaria-britania-bbp760p-power-plus-700w/p/jjk8gfgf06/ep/btdc/?partner_id=64068" target="_blank" class="btn btn-secondary btn-lg w-100">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-                        <a href="https://wa.me/5575991950593?text=Olá,%20gostaria%20de%20presentear%20com%20a%20batedeira!" target="_blank" class="btn btn-success btn-lg w-100">Presentear! <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <div class="product-card shadow-sm p-3">
+                        <img src="../assets/imagens-presentes/jogo-panelas.jpg" alt="Produto 6" class="img-fluid">
+                        <h4 class="my-2">Jogo de Panelas</h4>
+                        <a href="#" class="btn-custom btn-block mb-2" target="_blank">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+                        <a href="https://wa.me/7591950593?text=Escolhi%20o%20Presente!" class="btn-whatsapp btn-block" target="_blank">Presentear! <i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <h3 class="titulo-item">Panela de Pressão Elétrica</h3>
-                    <img src="../assets/imagens-presentes/panela-pressao-eletrica.jpg" alt="Foto da Sanduicheira" class="img-fluid mb-3">
-                    <div class="d-flex gap-2">
-                        <p class="msg-ganhamos">Já ganhamos esse presente!</p>
-                        <a href="https://encurtador.com.br/Fy6r9" target="_blank" class="btn btn-secondary btn-lg w-100">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-                        <a href="https://wa.me/5575991950593?text=Olá,%20gostaria%20de%20presentear%20com%20a%20panela%20de%20pressão%20elétrica!" target="_blank" class="btn btn-success btn-lg w-100">Presentear! <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <div class="product-card shadow-sm p-3">
+                        <img src="../assets/imagens-presentes/liquidificador.jpg" alt="Produto 7" class="img-fluid">
+                        <h4 class="my-2">Liquidificador</h4>
+                        <a href="#" class="btn-custom btn-block mb-2" target="_blank">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+                        <a href="https://wa.me/7591950593?text=Escolhi%20o%20Presente!" class="btn-whatsapp btn-block" target="_blank">Presentear! <i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <h3 class="titulo-item">Purificador de Água</h3>
-                    <img src="../assets/imagens-presentes/purificador-agua.jpg" alt="Foto da Sanduicheira" class="img-fluid mb-3">
-                    <div class="d-flex gap-2">
-                        <p class="msg-ganhamos">Já ganhamos esse presente!</p>
-                        <a href="https://encurtador.com.br/q2QjE" target="_blank" class="btn btn-secondary btn-lg w-100">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-                        <a href="https://wa.me/5575991950593?text=Olá,%20gostaria%20de%20presentear%20com%20o%20purificador%20de%20água!" target="_blank" class="btn btn-success btn-lg w-100">Presentear! <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <div class="product-card shadow-sm p-3">
+                        <img src="../assets/imagens-presentes/microondas.jpg" alt="Produto 8" class="img-fluid">
+                        <h4 class="my-2">Microondas</h4>
+                        <a href="#" class="btn-custom btn-block mb-2" target="_blank">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+                        <a href="https://wa.me/7591950593?text=Escolhi%20o%20Presente!" class="btn-whatsapp btn-block" target="_blank">Presentear! <i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <h3 class="titulo-item">Faqueiro</h3>
-                    <img src="../assets/imagens-presentes/faqueiro.jpg" alt="Foto da Sanduicheira" class="img-fluid mb-3">
-                    <div class="d-flex gap-2">
-                        <p class="msg-ganhamos">Já ganhamos esse presente!</p>
-                        <a href="https://encurtador.com.br/1fOef" target="_blank" class="btn btn-secondary btn-lg w-100">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-                        <a href="https://wa.me/5575991950593?text=Olá,%20gostaria%20de%20presentear%20com%20o%20faqueiro!" target="_blank" class="btn btn-success btn-lg w-100">Presentear! <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
-                    </div>
-                </div>
             </div>
         </div>
-
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <h3 class="titulo-item">Jogo de Copos</h3>
-                    <img src="../assets/imagens-presentes/jogo-copos.jpg" alt="Foto da Sanduicheira" class="img-fluid mb-3">
-                    <div class="d-flex gap-2">
-                        <p class="msg-ganhamos">Já ganhamos esse presente!</p>
-                        <a href="https://encurtador.com.br/YkgxY" target="_blank" class="btn btn-secondary btn-lg w-100">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-                        <a href="https://wa.me/5575991950593?text=Olá,%20gostaria%20de%20presentear%20com%20o%20jogo%20de%20copos!" target="_blank" class="btn btn-success btn-lg w-100">Presentear! <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <h3 class="titulo-item">Jogo de Copos Pavillion</h3>
-                    <img src="../assets/imagens-presentes/jogo-copos2.jpg" alt="Foto da Sanduicheira" class="img-fluid mb-3">
-                    <div class="d-flex gap-2">
-                        <p class="msg-ganhamos">Já ganhamos esse presente!</p>
-                        <a href="https://encurtador.com.br/gsZlD" target="_blank" class="btn btn-secondary btn-lg w-100">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-                        <a href="https://wa.me/5575991950593?text=Olá,%20gostaria%20de%20presentear%20com%20o%20jogo%20de%20copos%20pavillion!" target="_blank" class="btn btn-success btn-lg w-100">Presentear! <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <h3 class="titulo-item">Cafeteira Espresso</h3>
-                    <img src="../assets/imagens-presentes/cafeteira-espresso.jpg" alt="Foto da Cafeteira Espresso" class="img-fluid mb-3">
-                    <div class="d-flex gap-2">
-                        <p class="msg-ganhamos">Já ganhamos esse presente!</p>
-                        <a href="https://encurtador.com.br/N9tbB" target="_blank" class="btn btn-secondary btn-lg w-100">Ver na Loja <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-                        <a href="https://wa.me/5575991950593?text=Olá,%20gostaria%20de%20presentear%20com%20a%20cafeteira%20espresso!" target="_blank" class="btn btn-success btn-lg w-100">Presentear! <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
     </main>
 </body>
