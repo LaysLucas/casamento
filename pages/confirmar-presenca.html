@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays e Lucas</title>
+    <link rel="icon" type="image/png" href="../assets/imagens/icon.png"/>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../assets/plugins/jquery.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="../assets/js/particulas.js" defer></script>
+</head>
+
+<body class="no-scroll">
+    <header id="cabecalho" class="p-1">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo-menu">
+                <a href="../index.html">
+                    <span>L&L</span>
+                </a>
+            </div>
+    
+            <!-- Botão hamburger para mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </span>
+            </button>
+
+            <!-- Menu para telas grandes -->
+            <nav class="d-none d-md-block">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CASAL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CERIMÔNIA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lista-presentes.html">LISTA DE PRESENTES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="confirmar-presenca.html">CONFIRME SUA PRESENÇA</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <!-- Offcanvas (menu lateral) abrindo pela direita -->
+        <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+            <div class="offcanvas-header">
+                <h4 class="offcanvas-title" id="menuLateralLabel">Menu</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Casal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cerimônia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lista-presentes.html">Lista de Presentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="confirmar-presenca.html">Confirme sua Presença</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container img-fundo-confirmacao">
+            <div id="particles-js"></div>
+            <div class="full-height texto-sobre-imagem">
+                <h1 class="mb-2">Confirmação de Presença</h1>
+                <p class="fst-italic text-center fs-6 mb-5">Por favor, informe seu nome para que possamos confirmar sua presença na nossa lista de convidados!</p>
+                <a href="https://wa.me/7591950593?text=Eu,%20[nome],%20gostaria%20de%20confirmar%20presença%20no%20casamento!" class="btn-presenca btn-block" target="_blank">Quero Confirmar! <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -13,6 +13,15 @@
     margin: 0 auto;
 }
 
+#particles-js {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    pointer-events: none;
+    z-index: 3; /* Aumente o z-index para que fique acima das outras camadas */
+  }
+
 /*MENU*/
 #cabecalho {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
@@ -98,38 +107,7 @@
     color: #796fcd;
 }
 
-/*CORPO DO SITE*/
-
-/* Tamanho da imagem */
-.img-fundo {
-    background-image: url('../imagens/foto-fundo.jpg');
-    background-size: cover; /* Ajusta a imagem para cobrir a área */
-    background-position: center; /* Centraliza a imagem */
-    height: 700px; /* Define a altura da imagem */
-    position: relative; /* Para permitir o posicionamento do texto */
-    display: flex; /* Para centralizar o texto */
-    justify-content: center;
-    align-items: center;
-}
-
-/* Estilização do texto */
-.texto-sobre-imagem {
-    color: white; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
-    padding: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra nas letras */
-}
-
-.texto-sobre-imagem h1 {
-    font-size: 32px;
-    font-family: Poppins;
-}
-
-.texto-sobre-imagem p {
-    font-size: 18px;
-    font-family: Poppins;
-}
-
+/*CONTADOR*/
 .countdown {
     display: flex;
     justify-content: center;
@@ -170,6 +148,51 @@
 
 }
 
+/* INDEX */
+.img-fundo {
+    background-image: url('../imagens/foto-fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fundo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Opacidade da cor */
+    z-index: 1;
+}
+
+.img-fundo * {
+    position: relative;
+    z-index: 2; /* Garante que o conteúdo fique acima da camada de cor */
+}
+
+.texto-sobre-imagem {
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra nas letras */
+}
+
+.texto-sobre-imagem h1 {
+    font-size: 32px;
+    font-family: Poppins;
+}
+
+.texto-sobre-imagem p {
+    font-size: 18px;
+    font-family: Poppins;
+}
+
 .img-lavanda {
     height: 8rem;
     margin-top: 10px;
@@ -180,6 +203,7 @@
     font-family: Poppins;
 }
 
+/*LISTA DE PRESENTES*/
 .product-card {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -203,7 +227,6 @@
     object-fit: contain; /* Ajusta a imagem dentro do container sem cortar */
     width: 100%; /* Garante que a largura seja sempre 100% */
 }
-
 
 .product-card h4, 
 .product-card a {
@@ -258,9 +281,6 @@
     color: #ffffff;
 }
 
-
-
-/*já tinha:*/
 .info-endereco {
     text-align: center;
 }
@@ -291,4 +311,84 @@
     text-align: center;
     width: 100%;
     margin-top: 0.3rem;
+}
+
+/*CONFIRMAÇÃO DE PRESENÇA*/
+.full-height {
+    height: 100vh; /* 100% da altura da viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+}
+
+.no-scroll {
+    overflow: hidden; /* Desativa a rolagem */
+}
+
+.btn-presenca {
+    display: inline-block;
+    padding: 16px 40px; /* Tamanho do botão */
+    background-color: #ffffff00; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove o sublinhado */
+    border: 1px solid #ffffff; /* Remove a borda */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 1rem; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Efeito de transição para hover */
+    cursor: pointer; /* Cursor tipo mão ao passar o mouse */
+    font-weight: 600;
+}
+
+.btn-presenca i {
+    color: #ffffff; /* Cor do ícone normal */
+    transition: color 0.2s; /* Transição suave para a cor do ícone */
+}
+
+.btn-presenca:hover {
+    background-color: #796fcd; /* Cor ao passar o mouse */
+    color: #ffffff;
+}
+
+.btn-presenca:hover i {
+    color: #ffffff;
+}
+
+/* Estilo padrão para mobile (funciona bem) */
+.img-fundo-confirmacao {
+    background-image: url('../imagens/foto-confirmacao.jpg');
+    background-size: cover; /* Garante que a imagem cubra toda a área */
+    background-position: center;
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    height: 100vh; /* Altura da viewport */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para telas maiores (desktop) */
+@media (min-width: 768px) {
+    .img-fundo-confirmacao {
+        background-size: cover; /* Garante que a imagem cubra toda a área sem repetição */
+        background-position: center; /* Mantém o centro da imagem visível */
+        height: 100vh; /* Altura da viewport */
+    }
+}
+
+.img-fundo-confirmacao::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Opacidade da cor */
+    z-index: 1;
+}
+
+.img-fundo-confirmacao * {
+    position: relative;
+    z-index: 2; /* Garante que o conteúdo fique acima da camada de cor */
 }
