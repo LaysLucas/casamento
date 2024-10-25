@@ -107,6 +107,55 @@
     color: #796fcd;
 }
 
+/* FOOTER */
+.footer {
+    background-color: #796fcd;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer .logo-footer a span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.footer .social-icons a {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+.footer .social-icons a i {
+    margin-right: 5px;
+}
+
+.footer .social-icons a:hover,
+.footer .logo-footer a:hover {
+    color: #d1c4ff; /* Efeito hover */
+}
+
+.footer .developer p {
+    margin: 0;
+    font-size: 14px;
+    color: #f0f0f0;
+    font-family: Poppins;
+}
+
+/* Responsividade Footer*/
+@media (max-width: 576px) {
+    .footer .logo-footer a span {
+        font-size: 24px;
+    }
+    .footer .social-icons a {
+        font-size: 12px;
+    }
+    .footer .developer p {
+        font-size: 12px;
+    }
+}
+
+
 /*CONTADOR*/
 .countdown {
     display: flex;
