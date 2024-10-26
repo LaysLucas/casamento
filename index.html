@@ -13,8 +13,6 @@
     <script src="assets/plugins/jquery.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/contador.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="assets/js/particulas.js" defer></script>
 </head>
 
 <body>
@@ -39,8 +37,8 @@
             <!-- Menu para telas grandes -->
             <nav class="d-none d-md-block">
                 <ul class="nav">
-                    <li class="nav-item"><a class="nav-link" href="#">CASAL</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">CERIMÔNIA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#casal">CASAL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#cerimonia">CERIMÔNIA</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/lista-presentes.html">LISTA DE PRESENTES</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/confirmar-presenca.html">CONFIRME SUA PRESENÇA</a></li>
                 </ul>
@@ -55,8 +53,8 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="nav flex-column">
-                    <li class="nav-item"><a class="nav-link" href="#">Casal</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Cerimônia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#casal">Casal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#cerimonia">Cerimônia</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/lista-presentes.html">Lista de Presentes</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/confirmar-presenca.html">Confirme sua Presença</a></li>
                 </ul>
@@ -101,16 +99,50 @@
             <img src="assets/imagens/flor-lavanda.png" alt="flor de lavanda" class="img-lavanda">
         </div>
 
-        <div class="texto-explicativo container my-5">
-            <p>Seja bem-vindo ao nosso site de casamento! Aqui você encontra nossa história, detalhes da cerimônia, sugestões de presentes e um espaço para confirmar sua presença. Estamos ansiosos para compartilhar esse momento especial com você!</p>
+        <section id="casal">
+            <div class="texto-explicativo container my-5">
+                <p>Seja bem-vindo ao nosso site de casamento! Aqui você encontra nossa história, detalhes da cerimônia, sugestões de presentes e um espaço para confirmar sua presença. Estamos ansiosos para compartilhar esse momento especial com você!</p>
+            </div>
+        </section>
 
+        <div class="casal container my-5 text-center">
+            <h2>O Casal</h2>
+            <div class="row justify-content-center mt-4">
+                <div class="col-5">
+                    <div class="img-casal">
+                        <img src="assets/imagens/foto-lays.jpg" alt="Lays" class="rounded-circle img-thumbnail">
+                        <p class="mt-2">Lays Stela</p>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="img-casal">
+                        <img src="assets/imagens/foto-lucas.jpg" alt="Lucas" class="rounded-circle img-thumbnail">
+                        <p class="mt-2">Lucas Daniel</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <img src="assets/imagens/foto-casal1.jpg" alt="" class="img-casal-moldura">
+            </div>
+        </div>
+        <section id="cerimonia">
+        <div class="texto-explicativo container my-5">
             <p class="mt-5 fw-bold">"Acima de tudo, porém, revistam-se do amor, que é o elo perfeito."</p>
             <p class="fst-italic">Colossenses 3:14</p>
+        </div>
+        </section>
+        <div class="casal container my-5 text-center">
+            <h2>Cerimônia</h2>
+            <div class="">
+                <img src="assets/imagens/mapa-local.jpg" alt="Lays" class="img-mapa">
+                <p class="mt-2">R. Lago Itapoã, 360 - Caminho dos Lagos</p>
+            </div>
         </div>
 
     </main>
 
-    <footer class="footer text-center text-md-start p-3">
+    <footer class="footer text-center text-md-start p-3 mt-3">
         <div class="container d-flex flex-column align-items-center">
             <div class="logo-footer mb-2">
                 <a href="index.html" class="text-decoration-none text-white">
