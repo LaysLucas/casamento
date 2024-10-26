@@ -318,6 +318,43 @@
     object-fit: cover; /* Mantém a imagem coberta dentro do espaço definido */
 }
 
+.cerimonia h2 {
+    font-size: 2rem;
+    color: #796fcd;
+    font-family: Poppins;
+    font-weight: bold; /* Negrito */
+}
+
+.cerimonia h4,
+.cerimonia p {
+    font-family: Poppins;
+}
+
+.botoes-paginas {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espaço entre os botões */
+    margin: 20px 0; /* Espaçamento superior e inferior */
+}
+
+.botoes-paginas a {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    font-family: Poppins, sans-serif;
+    padding: 15px;
+    color: #796fcd;
+    border: 1px solid #796fcd;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botoes-paginas a:hover {
+    background-color: #796fcd; /* Cor de fundo ao passar o mouse */
+    color: #ffffff;
+}
 
 
 /*LISTA DE PRESENTES*/
