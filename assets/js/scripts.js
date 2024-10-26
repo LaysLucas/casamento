@@ -8,4 +8,9 @@ $(document).ready(function() {
             cabecalho.removeClass('cabecalho-rolagem');
         }
     });
+
+
+    $("#banners ul").bxSlider({
+        auto: true
+    });
 });
