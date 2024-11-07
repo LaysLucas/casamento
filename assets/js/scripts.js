@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    // Fixar menu ao topo
     var cabecalho = $('#cabecalho');
 
     $(window).scroll(function() {
@@ -9,8 +10,14 @@ $(document).ready(function() {
         }
     });
 
-
-    $("#banners ul").bxSlider({
-        auto: true
+    // Bloquear o botão direito e atalhos Ctrl+U e Ctrl+S
+    $(document).on('contextmenu', function(event) {
+        event.preventDefault();
+    });
+    
+    $(document).on('keydown', function(event) {
+        if (event.ctrlKey && (event.key === 'u' || event.key === 's')) {
+            event.preventDefault();
+        }
     });
 });
