@@ -8,6 +8,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+:root { /*definir variaveis tematicas*/
+    --cor-tema: #796fcd;
+    --fonte-padrao: Poppins;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -59,7 +64,7 @@
 
 /* Linhas do hamburger */
 .navbar-toggler-icon div {
-    background-color: #796fcd; /* Cor das linhas do hamburger */
+    background-color: var(--cor-tema); /* Cor das linhas do hamburger */
     height: 3px; /* Altura das linhas do hamburger */
     width: 100%; /* Largura total das linhas */
     margin-bottom: 6px;
@@ -73,21 +78,21 @@
 }
 
 .nav-link {
-    font-family: Poppins;
+    font-family: var(--fonte-padrao);
     color: #505050!important;
 }
 
 /* Estilo dos itens do menu lateral */
 .offcanvas .nav-link {
     font-size: 18px;
-    font-family: Poppins;
+    font-family: var(--fonte-padrao);
     color: #505050;
     padding: 15px;
     border-bottom: 1px solid #e0e0e0; /* Linha separadora */
 }
 
 .offcanvas .nav-link:hover {
-    color: #796fcd;
+    color: var(--cor-tema);
 }
 
 /* Ajuste da largura do menu lateral */
@@ -101,15 +106,15 @@
 }
 
 .logo-menu span {
-    font-family: Poppins;
+    font-family: var(--fonte-padrao);
     font-size: 32px;
     font-weight: 700;
-    color: #796fcd;
+    color: var(--cor-tema);
 }
 
 /* FOOTER */
 .footer {
-    background-color: #796fcd;
+    background-color: var(--cor-tema);
     color: #ffffff;
     padding: 20px 0;
     box-shadow: 0 2px 50px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
@@ -124,7 +129,7 @@
     color: #ffffff;
     font-size: 14px;
     text-decoration: none;
-    font-family: Poppins;
+    font-family: var(--fonte-padrao);
 }
 
 .footer .social-icons a i {
@@ -140,7 +145,7 @@
     margin: 0;
     font-size: 14px;
     color: #f0f0f0;
-    font-family: Poppins;
+    font-family: var(--fonte-padrao);
 }
 
 /* Responsividade Footer*/
@@ -166,7 +171,7 @@
 }
 
 .time-box {
-    background-color: #796fcd; /* Cor lavanda */
+    background-color: var(--cor-tema); /* Cor lavanda */
     border-radius: 10px;
     padding: 20px 10px; /* Ajustando o padding */
     text-align: center;
@@ -192,7 +197,7 @@
 .countdown-title {
     font-size: 2rem; /* Tamanho da fonte do título */
     font-weight: bold; /* Negrito */
-    color: #796fcd;
+    color: var(--cor-tema);
     margin-bottom: 20px; /* Espaço abaixo do título */
 
 }
@@ -234,12 +239,12 @@
 
 .texto-sobre-imagem h1 {
     font-size: 32px;
-    font-family: Poppins;
+    font-family: var(--fonte-padrao);
 }
 
 .texto-sobre-imagem p {
     font-size: 18px;
-    font-family: Poppins;
+    font-family: var(--fonte-padrao);
 }
 
 .img-lavanda {
@@ -249,13 +254,13 @@
 
 .texto-explicativo p {
     text-align: center;
-    font-family: Poppins;
+    font-family: var(--fonte-padrao);
 }
 
 .casal h2 {
     font-size: 2rem;
-    color: #796fcd;
-    font-family: Poppins;
+    color: var(--cor-tema);
+    font-family: var(--fonte-padrao);
     font-weight: bold; /* Negrito */
 }
 
@@ -293,7 +298,7 @@
     font-size: 1.1rem;
     color: #333;
     margin-top: 0.5rem;
-    font-family: Poppins;
+    font-family: var(--fonte-padrao);
 }
 
 .img-casal-moldura {
@@ -320,14 +325,14 @@
 
 .cerimonia h2 {
     font-size: 2rem;
-    color: #796fcd;
-    font-family: Poppins;
+    color: var(--cor-tema);
+    font-family: var(--fonte-padrao);
     font-weight: bold; /* Negrito */
 }
 
 .cerimonia h4,
 .cerimonia p {
-    font-family: Poppins;
+    font-family: var(--fonte-padrao);
 }
 
 .botoes-paginas {
@@ -344,15 +349,15 @@
     justify-content: center; /* Centraliza horizontalmente */
     font-family: Poppins, sans-serif;
     padding: 15px;
-    color: #796fcd;
-    border: 1px solid #796fcd;
+    color: var(--cor-tema);
+    border: 1px solid var(--cor-tema);
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .botoes-paginas a:hover {
-    background-color: #796fcd; /* Cor de fundo ao passar o mouse */
+    background-color: var(--cor-tema); /* Cor de fundo ao passar o mouse */
     color: #ffffff;
 }
 
@@ -385,13 +390,13 @@
 .product-card h4, 
 .product-card a {
     margin: 0;
-    font-family: Poppins;
+    font-family: var(--fonte-padrao);
 }
 
 .btn-custom {
     display: inline-block;
     padding: 6px 12px; /* Tamanho do botão */
-    background-color: #796fcd; /* Cor de fundo */
+    background-color: var(--cor-tema); /* Cor de fundo */
     color: #ffffff; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
     text-decoration: none; /* Remove o sublinhado */
@@ -441,7 +446,7 @@
 
 .detalhes-endereco {
     margin-bottom: 0;
-    font-family: Poppins;
+    font-family: var(--fonte-padrao);
 }
 
 /* Parte referente a desabilitar o item (apenas titulo e img): */
@@ -457,7 +462,7 @@
 .msg-ganhamos {
     display: none; /* Deixar o parágrafo desabilitado por padrão */
     font-style: italic;
-    font-family: Poppins;
+    font-family: var(--fonte-padrao);
 }
 
 .disabled .msg-ganhamos {
@@ -501,7 +506,7 @@
 }
 
 .btn-presenca:hover {
-    background-color: #796fcd; /* Cor ao passar o mouse */
+    background-color: var(--cor-tema); /* Cor ao passar o mouse */
     color: #ffffff;
 }
 
